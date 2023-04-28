@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr = [1, 4, 7, 9, 11, 22];
+    let max = arr[0];
+    let tong = 0;
+    let tongtb;
+    for (let i = 0; i < arr.length; i++) {
+        if (max < arr[i]) {
+            max = arr[i];
+            arr[i] = max;
+            tong += arr[i];
+            tongtb=tong/arr.length;
+        }
+    }
+    alert(max);
+    document.write("gia tri trung binh la: " + tongtb);
+
+
+<!--    int[] myArray = { 3, 5, 7, 30, 10, 5, 8, 23, 0, -5 };-->
+<!--    int sum = 0;-->
+<!--    double avg;-->
+<!--    int count = myArray.length;-->
+<!--    for (int i = 0; i < count; i++) {-->
+<!--        sum += myArray[i];-->
+<!--    }-->
+<!--    avg = (double) sum / count;-->
+<!--    System.out.println("Sum is " + sum);-->
+<!--    System.out.println("Avegare is " + avg);-->
+
+</script>

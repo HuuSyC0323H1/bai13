@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    // let arr = [-1, 0, 3, 4, 5, 12, 5, 7, 9, 10];
+    // let max=arr[0];
+    // for (let i=0;i<arr.length;i++){
+    //     if (max<arr[i]){
+    //         max=arr[i];
+    //         arr[i]=max;
+    //     }
+    // }
+    // alert(max);
+
+
+    // sap xep theo tang dan
+    let arr = [-1, 0, 3, 4, 5, 12, 5, 7, 9, 10];
+    let tmp;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] < arr[j - 1]) {
+                tmp = arr[j];
+                arr[j] = arr[j-1];
+                arr[j-1] = tmp;
+            }
+        }
+    }
+    alert(arr);
+
+
+
+    //sap xep theo giam dan
+    // let arr = [-1, 0, 3, 4, 5, 12, 5, 7, 9, 10];
+    // let tmp;
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = 0; j < arr.length; j++) {
+    //         if (arr[j] < arr[j + 1]) {
+    //             tmp = arr[j]
+    //             arr[j] = arr[j + 1];
+    //             arr[j + 1] = tmp;
+    //         }
+    //     }
+    // }
+    // alert(arr);
+
+</script>

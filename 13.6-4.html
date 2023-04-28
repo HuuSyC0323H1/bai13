@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  function countWords(str) {
+    let words = str.split(' ');
+    let count = 0;
+    for (let i = 0; i < words.length; i++) {
+      if (words[i] !== '') {
+        count++;
+      }
+    }
+    return count;
+  }
+
+  let str = "Bạn quá gà đi mất đi a ";
+  alert("Số từ trong chuỗi: " + countWords(str));
+</script>
